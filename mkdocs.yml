@@ -30,6 +30,8 @@ theme:
     - navigation.expand   # Deixa os menus já abertos por padrão
     - navigation.top      # Adiciona um botão de "Voltar ao topo" suave
     - content.code.copy   # Adiciona um botão de "Copiar" nos blocos de código
+    - content.action.edit
+    - content.action.view
 nav:
   - Home: index.md
   - Projeto Blue-Team-Lab:
