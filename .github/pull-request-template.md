@@ -1,3 +1,5 @@
+> ⚠️ **IMPORTANT:** All checklist items below must be marked with `[x]` for the security verification (CI) to pass and the merge to be enabled.
+
 ## 📝 Description
 Provide a brief summary of the changes.
 
