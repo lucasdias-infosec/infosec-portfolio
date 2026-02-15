@@ -1,0 +1,45 @@
+# ==========================================
+# GESTÃO DE SEGURANÇA E PRIVACIDADE
+# ==========================================
+# Nunca suba arquivos que contenham senhas, chaves ou tokens
+.env
+*.pem
+*.key
+*.pub
+secrets.json
+credentials.yml
+
+# ==========================================
+# ARQUIVOS DE SISTEMA (LIMPEZA)
+# ==========================================
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# ==========================================
+# ARQUIVOS TEMPORÁRIOS DE ESCRITA E OFFICE
+# ==========================================
+# Arquivos temporários do Word/Excel (começam com ~$)
+~$*
+# Arquivos de backup do Office
+*.tmp
+*.bak
+
+# ==========================================
+# EDITORES DE TEXTO E IDEs
+# ==========================================
+.vscode/
+.idea/
+*.swp
+*.swo
+
+# ==========================================
+# RELATÓRIOS E LOGS DE FERRAMENTAS
+# ==========================================
+# Caso use ferramentas de scan (ex: Nmap, Nessus)
+*.log
+*.report
+*.xml
+# Se gerar PDFs ou Docs automáticos, remova o # abaixo se quiser ignorá-los
+# *.pdf
+# *.docx
