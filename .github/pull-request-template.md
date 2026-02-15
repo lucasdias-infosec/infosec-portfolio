@@ -1,20 +1,20 @@
-> ⚠️ **IMPORTANT:** All checklist items below must be marked with `[x]` for the security verification (CI) to pass and the merge to be enabled.
+> ⚠️ **IMPORTANT:** All mandatory checklist items below must be marked with `[x]` (no spaces) for the CI to pass.
 
 ## 📝 Description
 Provide a brief summary of the changes.
 
 ## 🛡️ Security & Ethics Checklist (Infosec)
-- [ ] No sensitive information exposed (real IPs, credentials, API keys).
-- [ ] Content follows ethical hacking and defensive security guidelines.
-- [ ] No malicious links or unverified binaries included.
+- [] No sensitive information exposed (real IPs, credentials, API keys).
+- [] Content follows ethical hacking and defensive security guidelines.
+- [] No malicious links or unverified binaries included.
 
 ## 🧪 Technical Validation
-- [ ] Local build tested with `mkdocs serve`.
-- [ ] Images/Assets placed in `docs/assets/`.
-- [ ] Internal and external links verified.
+- [] Local build tested with `mkdocs serve`.
+- [] Images/Assets placed in `docs/assets/`.
+- [] Internal and external links verified.
 
 ## 🚀 Type of Change
-- [ ] 📖 Documentation update
-- [ ] 🛠️ Lab configuration change
-- [ ] 🐞 Bug fix (broken links, typos)
-- [ ] ✨ New feature/lab addition
+- [] 📖 Documentation update
+- [] 🛠️ Lab configuration change
+- [] 🐞 Bug fix (broken links, typos)
+- [] ✨ New feature/lab addition
