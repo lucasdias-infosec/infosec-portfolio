@@ -1,17 +1,18 @@
-name: "Security Triage"
-on:
-  pull_request:
-    types: [opened, edited, synchronized]
+## 📝 Description
+Provide a brief summary of the changes.
 
-jobs:
-  validation:
-    name: "Manual Checklist Verification"
-    runs-on: ubuntu-latest
-    steps:
-      - name: Checkout code
-        uses: actions/checkout@v4
+## 🛡️ Security & Ethics Checklist (Infosec)
+- [ ] No sensitive information exposed (real IPs, credentials, API keys).
+- [ ] Content follows ethical hacking and defensive security guidelines.
+- [ ] No malicious links or unverified binaries included.
 
-      - name: Audit Check
-        run: |
-          echo "Scanning Pull Request for security compliance..."
-          echo "Please ensure the Infosec Checklist is completed."
+## 🧪 Technical Validation
+- [ ] Local build tested with `mkdocs serve`.
+- [ ] Images/Assets placed in `docs/assets/`.
+- [ ] Internal and external links verified.
+
+## 🚀 Type of Change
+- [ ] 📖 Documentation update
+- [ ] 🛠️ Lab configuration change
+- [ ] 🐞 Bug fix (broken links, typos)
+- [ ] ✨ New feature/lab addition
