@@ -1,0 +1,23 @@
+name: publish-site
+on:
+  push:
+    branches:
+      - main  # Toda vez que você subir algo para a branch main, ele atualiza o site
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      
+      - name: Configurar Python
+        uses: actions/setup-python@v4
+        with:
+          python-version: 3.x
+
+      - name: Instalar MkDocs e Temas
+        run: |
+          pip install mkdocs
+          pip install mkdocs-material # Se você estiver usando o tema Material
+
+      - name: Deploy do Site
+        run: mkdocs gh-deploy --force
