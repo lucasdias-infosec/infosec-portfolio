@@ -1,6 +1,6 @@
 site_name: Lucas Dias Ramos - My Docs
-repo_url: https://github.com/lucasdias-infosec/mkdocs
-repo_name: lucasdias-infosec/mkdocs
+repo_url: https://github.com/lucasdias-infosec/infosec-portfolio
+repo_name: lucasdias-infosec/infosec-portfolio
 edit_uri: edit/main/docs/
 theme:
   name: material
