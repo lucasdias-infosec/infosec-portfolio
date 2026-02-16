@@ -5,37 +5,36 @@ repo_name: lucasdias-infosec/infosec-portfolio/
 edit_uri: edit/main/docs/
 theme:
   name: material
-  language: pt-BR
-  logo: assets/Logo.png  # Caminho relativo à pasta docs
-  favicon: assets/Logo.png # Opcional: usa a mesma imagem como ícone da aba
+  language: en
+  logo: assets/Logo.png  
+  favicon: assets/Logo.png 
   palette: 
-    # Modo Claro/Escuro automático baseado no sistema do usuário
     - media: "(prefers-color-scheme: light)"
       scheme: default
       primary: indigo
       accent: indigo
       toggle:
         icon: material/brightness-7
-        name: Mudar para modo escuro
+        name: Switch to dark mode
     - media: "(prefers-color-scheme: dark)"
       scheme: slate
       primary: indigo
       accent: indigo
       toggle:
         icon: material/brightness-4
-        name: Mudar para modo claro
+        name: Switch to light mode
   features:
-    - navigation.tabs      # Menu no topo
-    - navigation.sections  # Agrupamento no menu lateral
-    - search.suggest       # Busca inteligente
-    - navigation.expand   # Deixa os menus já abertos por padrão
-    - navigation.top      # Adiciona um botão de "Voltar ao topo" suave
-    - content.code.copy   # Adiciona um botão de "Copiar" nos blocos de código
+    - navigation.tabs
+    - navigation.sections
+    - search.suggest
+    - navigation.expand
+    - navigation.top
+    - content.code.copy
     - content.action.edit
     - content.action.view
 nav:
   - Home: index.md
-  - Projeto Blue-Team-Lab:
+  - Project Blue-Team-Lab:
     - PT-BR:
       - Introdução: Blue-Team-Lab/PT-BR/Blue-Team-Lab-PT-BR.md
 extra:
@@ -46,8 +45,8 @@ extra:
       link: https://linkedin.com/in/lucas-dias-ramos-a435a0369
     - icon: fontawesome/solid/envelope
       link: mailto:lucas.dias.ramos.pro@gmail.com
-      name: Enviar E-mail
+      name: E-mail
     - icon: fontawesome/solid/scale-balanced
       link: Blue-Team-Lab/PT-BR/ETICA/
-      name: Ética Profissional
+      name: Professional Code of Ethics
       
