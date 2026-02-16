@@ -1,7 +1,7 @@
 # ==========================================
-# GESTÃO DE SEGURANÇA E PRIVACIDADE
+# SECURITY & PRIVACY MANAGEMENT
 # ==========================================
-# Nunca suba arquivos que contenham senhas, chaves ou tokens
+# Never upload files containing passwords, keys, or tokens
 .env
 *.pem
 *.key
@@ -10,23 +10,23 @@ secrets.json
 credentials.yml
 
 # ==========================================
-# ARQUIVOS DE SISTEMA (LIMPEZA)
+# SYSTEM FILES (CLEANUP)
 # ==========================================
 .DS_Store
 Thumbs.db
 desktop.ini
 
 # ==========================================
-# ARQUIVOS TEMPORÁRIOS DE ESCRITA E OFFICE
+# TEMPORARY OFFICE & WRITING FILES
 # ==========================================
-# Arquivos temporários do Word/Excel (começam com ~$)
+# Word/Excel temporary files (starting with ~$)
 ~$*
-# Arquivos de backup do Office
+# Office backup files
 *.tmp
 *.bak
 
 # ==========================================
-# EDITORES DE TEXTO E IDEs
+# TEXT EDITORS AND IDEs
 # ==========================================
 .vscode/
 .idea/
@@ -34,8 +34,8 @@ desktop.ini
 *.swo
 
 # ==========================================
-# RELATÓRIOS E LOGS DE FERRAMENTAS
+# TOOL LOGS AND REPORTS
 # ==========================================
-# Caso use ferramentas de scan (ex: Nmap, Nessus)
+# In case of scanning tools (e.g., Nmap, Nessus)
 *.log
 *.report
