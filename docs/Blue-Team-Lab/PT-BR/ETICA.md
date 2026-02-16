@@ -1,25 +1,26 @@
-# ⚖️ Código de Ética Profissional
+# ⚖️ Professional Code of Ethics
 
-Este documento descreve os princípios éticos que norteiam minha prática profissional, tomadas de decisão e o desenvolvimento dos projetos apresentados neste portfólio.
+This document outlines the ethical principles that guide my professional practice, decision-making, and the development of the projects presented in this portfolio.
 
-## 1. Integridade e Autoria
-* **Transparência:** Comprometo-me a ser honesto sobre a extensão da minha participação em cada projeto. Créditos a terceiros, bibliotecas open-source e colaboradores são sempre explicitados.
-* **Honestidade Técnica:** Não omito falhas conhecidas ou limitações técnicas em prol de uma estética comercial. Documento o que funciona e o que ainda precisa de melhoria.
+## 1. Integrity and Authorship
+- **Transparency:** I commit to being honest about the extent of my involvement in each project. Credits to third parties, open-source libraries, and contributors are always explicitly stated.
+- **Technical Honesty:** I do not omit known flaws or technical limitations for the sake of commercial aesthetics. I document what works and what still requires improvement.
 
-## 2. Responsabilidade Digital e Social
-* **Privacidade por Design:** Priorizo a proteção de dados e a privacidade do usuário final em cada solução que desenvolvo.
-* **Anti-Dark Patterns:** Recuso-me a criar interfaces ou sistemas desenhados para enganar, manipular ou induzir usuários a decisões prejudiciais.
-* **Impacto Social:** Não participo de projetos que promovam discurso de ódio, desinformação ou qualquer forma de discriminação sistêmica.
+## 2. Digital and Social Responsibility
+- **Privacy by Design:** I prioritize data protection and end-user privacy in every solution I develop.
+- **Anti-Dark Patterns:** I refuse to create interfaces or systems designed to deceive, manipulate, or trick users into harmful decisions.
+- **Social Impact:** I do not participate in projects that promote hate speech, misinformation, or any form of systemic discrimination.
 
-## 3. Uso Ético de Tecnologias (IA e Automação)
-* **Revisão Humana:** Embora utilize IA para ganho de produtividade, assumo total responsabilidade pelo código final, garantindo que ele seja testado, seguro e compreensível.
-* **Sustentabilidade:** Busco otimizar algoritmos e recursos para reduzir o consumo desnecessário de processamento e energia.
+## 3. Ethical Use of Technology (AI and Automation)
+- **AI-Augmented Productivity:** I actively leverage AI and automation to enhance efficiency and scale my capabilities. I view these technologies as powerful partners in the development process.
+- **Human-in-the-loop (HITL):** I maintain total accountability for the final output. Every AI-assisted contribution is rigorously audited, tested, and refined to ensure it meets high security and performance standards.
+- **Sustainability:** I strive to optimize algorithms and resources to reduce unnecessary processing and energy consumption.
 
-## 4. Confidencialidade
-* Respeito rigorosamente acordos de não divulgação (NDA). Projetos de clientes reais exibidos aqui possuem dados fictícios ou autorização formal para exibição pública.
+## 4. Confidentiality
+- I strictly respect Non-Disclosure Agreements (NDAs). Real-world client projects displayed here use dummy data or have formal authorization for public display.
 
 ---
 
-*Este código é revisado periodicamente para se manter alinhado às melhores práticas da indústria de tecnologia.*
+*This code is periodically reviewed to remain aligned with the best practices of the technology industry.*
 
-> Atualizado em: 16 de Fevereiro de 2026
+> Last Updated: February 16, 2026
