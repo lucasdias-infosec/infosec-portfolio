@@ -15,20 +15,33 @@ jobs:
         env:
           PR_BODY: ${{ github.event.pull_request.body }}
         run: |
-          echo "Scanning Pull Request for mandatory security compliance..."
-          
-          # 1. Verifica se existe algum item vazio: [ ]
-          if echo "$PR_BODY" | grep -q "\[ \]"; then
-            echo "❌ ERROR: You left some items empty [ ]."
-            exit 1
-          fi
+        echo "Scanning Pull Request for mandatory security compliance..."
 
-          # 2. Verifica se existe algo que NÃO SEJA [x] ou [X] nos checklists
-          # Esta regex procura por colchetes que contenham qualquer coisa diferente de um único x
-          if echo "$PR_BODY" | grep -E "\[[^xX ]\]|\[.{2,}\]|\[ \s+ \]" | grep -v "\[[xX]\]" | grep -q "\["; then
-            echo "❌ ERROR: Invalid character detected! Use only [x] to mark items."
-            echo "Make sure there are no spaces or multiple letters inside the brackets."
-            exit 1
-          else
-            echo "✅ Success: All items correctly marked with [x]."
-          fi
+        # 1. Validação de Formato Geral (Garante que não existam espaços ou caracteres inválidos)
+        if echo "$PR_BODY" | grep -E "\[([^xX ]| {2,}|[xX] )\]" | grep -q "\["; then
+          echo "❌ ERROR: Invalid format! Use only [x] to mark items."
+          exit 1
+        fi
+
+        # 2. SEÇÕES OBRIGATÓRIAS: Segurança (3 itens) e Validação Técnica (3 itens)
+        # Total esperado de marcações antes da seção 'Type of Change' = 6
+        MANDATORY_COUNT=$(echo "$PR_BODY" | grep -E "No sensitive|Content follows|No malicious|Local build|Images/Assets|Internal and external" | grep -ci "\[x\]")
+        
+        if [ "$MANDATORY_COUNT" -lt 6 ]; then
+          echo "❌ ERROR: You must check ALL items in Security and Technical Validation sections ($MANDATORY_COUNT/6 marked)."
+          exit 1
+        fi
+
+        # 3. SEÇÃO 'TYPE OF CHANGE': Exatamente 1 seleção
+        # Filtramos pelos emojis específicos usados no seu template
+        TYPE_CHANGE_COUNT=$(echo "$PR_BODY" | grep -E "📖|🛠️|🐞|✨" | grep -ci "\[x\]")
+        
+        if [ "$TYPE_CHANGE_COUNT" -eq 0 ]; then
+          echo "❌ ERROR: Please select at least one 'Type of Change'."
+          exit 1
+        elif [ "$TYPE_CHANGE_COUNT" -gt 1 ]; then
+          echo "❌ ERROR: Please select ONLY ONE 'Type of Change' (you selected $TYPE_CHANGE_COUNT)."
+          exit 1
+        fi
+
+        echo "✅ Success: All mandatory items and Type of Change verified!"
