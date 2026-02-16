@@ -16,19 +16,32 @@ jobs:
           PR_BODY: ${{ github.event.pull_request.body }}
         run: |
           echo "Scanning Pull Request for mandatory security compliance..."
-          
-          # 1. Verifica se existe algum item vazio: [ ]
-          if echo "$PR_BODY" | grep -q "\[ \]"; then
-            echo "❌ ERROR: You left some items empty [ ]."
+
+          # 1. Validação de Formato Geral
+          if echo "$PR_BODY" | grep -E "\[([^xX ]| {2,}|[xX] )\]" | grep -q "\["; then
+            echo "❌ ERROR: Invalid format! Use only [x] to mark items."
             exit 1
           fi
 
-          # 2. Verifica se existe algo que NÃO SEJA [x] ou [X] nos checklists
-          # Esta regex procura por colchetes que contenham qualquer coisa diferente de um único x
-          if echo "$PR_BODY" | grep -E "\[[^xX ]\]|\[.{2,}\]|\[ \s+ \]" | grep -v "\[[xX]\]" | grep -q "\["; then
-            echo "❌ ERROR: Invalid character detected! Use only [x] to mark items."
-            echo "Make sure there are no spaces or multiple letters inside the brackets."
+          # 2. SEÇÕES OBRIGATÓRIAS (Segurança e Técnica)
+          # Verifica se existem 6 itens marcados nestas seções específicas
+          MANDATORY_COUNT=$(echo "$PR_BODY" | grep -E "No sensitive|Content follows|No malicious|Local build|Images/Assets|Internal and external" | grep -ci "\[x\]")
+          
+          if [ "$MANDATORY_COUNT" -lt 6 ]; then
+            echo "❌ ERROR: You must check ALL 6 mandatory items in Security and Technical Validation."
+            echo "Currently marked: $MANDATORY_COUNT/6"
             exit 1
-          else
-            echo "✅ Success: All items correctly marked with [x]."
           fi
+
+          # 3. SEÇÃO 'TYPE OF CHANGE': Exatamente 1 seleção
+          TYPE_CHANGE_COUNT=$(echo "$PR_BODY" | grep -E "📖|🛠️|🐞|✨" | grep -ci "\[x\]")
+          
+          if [ "$TYPE_CHANGE_COUNT" -eq 0 ]; then
+            echo "❌ ERROR: Please select at least one 'Type of Change'."
+            exit 1
+          elif [ "$TYPE_CHANGE_COUNT" -gt 1 ]; then
+            echo "❌ ERROR: Please select ONLY ONE 'Type of Change'."
+            exit 1
+          fi
+
+          echo "✅ Success: All checks passed!"
