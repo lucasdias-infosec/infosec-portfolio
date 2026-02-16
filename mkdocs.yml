@@ -37,8 +37,9 @@ nav:
   - Project Blue-Team-Lab:
     - PT-BR:
       - Introdução: Blue-Team-Lab/PT-BR/Blue-Team-Lab-PT-BR.md
-        - Base da Infraestrutura: Blue-Team-Lab/PT-BR/00-base-infra.md
-      - Guia-de-Contribuições: Blue-Team-Lab/PT-BR/Guia-de-Contribuições.md
+      - Base da Infraestutura e Intalação de Ferramentas:
+      - Base da Infraestrutura: Blue-Team-Lab/PT-BR/00-base-infra.md
+    - Guia-de-Contribuições: Blue-Team-Lab/PT-BR/Guia-de-Contribuições.md
 extra:
   social:
     - icon: fontawesome/brands/github
