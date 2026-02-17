@@ -5,22 +5,22 @@ Laboratório prático de Segurança da Informação voltado para detecção, mon
 
 ## 🎯 Objetivo
 Construir um ambiente controlado para estudo de:
-- Monitoramento de segurança
-- Análise de logs
-- Detecção de intrusão
-- Testes de vulnerabilidades
-- Hardening de sistemas Linux
+- Monitoramento de segurança,
+- Análise de logs,
+- Detecção de intrusão,
+- Testes de vulnerabilidades,
+- Hardening de sistemas Linux,
 O laboratório simula um cenário corporativo básico com ferramentas de defesa (Blue Team) e aplicações vulneráveis para testes.
 
 ---
 
 ## 🏗 Arquitetura Geral
-- **Sistema Base:** Ubuntu Server
-- **Firmware:** UEFI
-- **Criptografia de Disco:** LUKS
-- **Gerenciamento de Volume:** LVM
-- **Virtualização:** (VirtualBox / VMware)
-- **Rede:** Host-Only (ambiente isolado)
+- **Sistema Base:** Ubuntu Server.
+- **Firmware:** UEFI.
+- **Criptografia de Disco:** LUKS.
+- **Gerenciamento de Volume:** LVM.
+- **Virtualização:** (VirtualBox / VMware).
+- **Rede:** Host-Only (ambiente isolado).
 
 A construção detalhada da base está documentada em:
 
@@ -41,11 +41,11 @@ lab-blue-team/
 README.md
 
 Cada diretório contém:
-- Documentação de instalação
-- Configurações aplicadas
-- Ajustes de segurança
-- Comandos utilizados
-- Observações técnicas
+- Documentação de instalação,
+- Configurações aplicadas,
+- Ajustes de segurança,
+- Comandos utilizados,
+- Observações técnicas.
 
 ---
 
@@ -54,9 +54,3 @@ Cada diretório contém:
 ## Guia para Contribuições
 
 📂 [Guia-de-Contribuições](Guia-de-Contribuições.md)
-
-## 👤 Autor
-
-Lucas  
-Estudante de Ciência da Computação  
-Foco em Segurança da Informação
