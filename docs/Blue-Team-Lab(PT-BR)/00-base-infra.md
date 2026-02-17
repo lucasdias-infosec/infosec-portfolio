@@ -270,7 +270,7 @@ Essa segmentação visa:
 
 ### 18.1 Preparação da Estrutura LVM
 
-##### 18.1.2 Verificação do Volume Group
+#### 18.1.2 Verificação do Volume Group
 
 Foi identificado espaço livre disponível no Volume Group ubuntu-vg, residente sobre o container criptografado LUKS.
 Essa verificação garantiu que novos volumes poderiam ser criados sem necessidade de redimensionamento do volume raiz.
