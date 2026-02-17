@@ -17,7 +17,8 @@ Esta base estabelece os fundamentos necessários para a implementação das ferr
 
 ## 1. Objetivo do Laboratório
 
-O objetivo deste laboratório é a construção de um ambiente controlado, leve e funcional destinado ao treinamento prático em Segurança da Informação, com foco em atividades de Blue Team.
+O objetivo deste laboratório é a construção de um ambiente con
+]trolado, leve e funcional destinado ao treinamento prático em Segurança da Informação, com foco em atividades de Blue Team.
 O ambiente visa possibilitar o monitoramento de eventos, a análise de logs, a detecção de ameaças e a aplicação de técnicas de defesa, considerando um cenário de recursos de hardware limitados.
 
 ## 2. Objetivos de Aprendizado e Demonstração
