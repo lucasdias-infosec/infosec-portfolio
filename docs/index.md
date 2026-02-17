@@ -18,7 +18,7 @@ I am passionate about **defensive cybersecurity** and possess a **solid theoreti
 ## Projects
 Here on GitHub, you will find my projects focused on **Information Security**, exploring **Blue Team** tools, analysis, and best practices.
 
-- 🛡️ **Blue Team Lab:** [Blue-Team-Lab(PT-BR)](Blue-Team-Lab/PT-BR/Blue-Team-Lab-PT-BR.md)
+- 🛡️ **Blue Team Lab:** [Blue-Team-Lab(PT-BR)](Blue-Team-Lab(PT-BR)/Introdução.md)
 
 ---
 
