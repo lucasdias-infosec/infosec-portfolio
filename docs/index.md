@@ -1,6 +1,8 @@
 # 👨🏻‍💻 Lucas Dias
 
-🎓 **Computer Science** Student | Focused on **Information Security (Blue Team)** ---
+🎓 **Computer Science** Student | Focused on **Information Security (Blue Team)** 
+
+---
 
 ## About Me
 I am passionate about **defensive cybersecurity** and possess a **solid theoretical foundation**, always seeking to apply my knowledge to practical projects. My goal is to build a **technical portfolio** that reflects my evolution in the field.  
