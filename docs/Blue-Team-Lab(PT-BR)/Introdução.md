@@ -50,7 +50,3 @@ Cada diretório contém:
 ---
 
 ## 🔧 Ferramentas Implementadas (em construção)
-
-## Guia para Contribuições
-
-📂 [Guia-de-Contribuições](infosec-portfolio/docs/Contribution-Guide.md)
