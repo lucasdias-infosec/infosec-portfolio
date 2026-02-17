@@ -37,6 +37,7 @@ nav:
       - Base da Infraestrutura e Instalação de Ferramentas:
           - Base da Infraestrutura: Blue-Team-Lab/PT-BR/00-base-infra.md
       - Guia-de-Contribuições: Blue-Team-Lab/PT-BR/Guia-de-Contribuições.md
+  - Professional Code of Ethics: ETICA.md
 extra:
   social:
     - icon: fontawesome/brands/github
@@ -46,7 +47,5 @@ extra:
     - icon: fontawesome/solid/envelope
       link: mailto:lucas.dias.ramos.pro@gmail.com
       name: E-mail
-    - icon: fontawesome/solid/scale-balanced
-      link: ETICA/
-      name: Professional Code of Ethics
+   
       
