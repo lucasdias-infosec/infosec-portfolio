@@ -1,6 +1,3 @@
-Com certeza! Aqui está o código pronto em Markdown, já formatado para você copiar e colar diretamente no seu README.md do GitHub.
-
-Markdown
 # 👨🏻‍💻 Lucas Dias
 
 🎓 **Computer Science** Student | Focused on **Information Security (Blue Team)** ---
