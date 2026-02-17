@@ -53,4 +53,4 @@ Cada diretório contém:
 
 ## Guia para Contribuições
 
-📂 [Guia-de-Contribuições](Guia-de-Contribuições.md)
+📂 [Guia-de-Contribuições](docs/Guia-de-Contribuições.md)
