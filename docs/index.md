@@ -13,6 +13,7 @@ I am passionate about **defensive cybersecurity** and possess a **solid theoreti
 
 ---
 
+
 ## Projects
 Here on GitHub, you will find my projects focused on **Information Security**, exploring **Blue Team** tools, analysis, and best practices.
 
