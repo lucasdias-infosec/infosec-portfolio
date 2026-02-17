@@ -4,6 +4,7 @@ Thank you for your interest in contributing! To keep the project organized, secu
 
 ## 🛡️ Security First (Infosec)
 All contributions should follow ethical and professional standards: 
+
 - **Sensitive Data:** Never submit Pull Requests containing real network data, plaintext passwords, tokens, or private keys.  
 - **Ethical Use:** All content must focus on defensive security research and ethical learning.
 
