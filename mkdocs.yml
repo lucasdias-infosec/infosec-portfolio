@@ -47,6 +47,6 @@ extra:
       link: mailto:lucas.dias.ramos.pro@gmail.com
       name: E-mail
     - icon: fontawesome/solid/scale-balanced
-      link: ETICA.md
+      link: docs/ETICA.md
       name: Professional Code of Ethics
       
