@@ -20,7 +20,7 @@ Do not make changes directly on `main`. Create a branch for your modification.
 # Standardization
 
 - Follow the existing writing style in the Markdown files.
-- Check the [Style Guide](link or attachment) for details on formatting, headings, and conventions.
+- Check the [Style Guide](Style-Guide.md) for details on formatting, headings, and conventions.
 
 # Pull Requests
 
