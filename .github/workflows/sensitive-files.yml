@@ -13,12 +13,14 @@ jobs:
     steps:
       - name: Checkout repository
         uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
 
       - name: Detect sensitive file extensions
         run: |
           echo "Scanning changed files..."
 
-          FILES=$(git diff --name-only origin/${{ github.base_ref }}...HEAD)
+          FILES=$(git diff --name-only ${{ github.event.pull_request.base.sha }} ${{ github.sha }})
 
           echo "Changed files:"
           echo "$FILES"
