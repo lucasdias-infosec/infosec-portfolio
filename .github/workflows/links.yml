@@ -9,7 +9,6 @@ jobs:
       - name: Link Checker
         uses: lycheeverse/lychee-action@v1.9.0
         with:
-          # Verifica todos os arquivos Markdown (.md)
-          args: --verbose --no-progress "**/*.md"
+          args: --fail --verbose --no-progress "."
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
