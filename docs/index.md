@@ -18,13 +18,26 @@ I am passionate about **defensive cybersecurity** and possess a **solid theoreti
 ## Projects
 Here on GitHub, you will find my projects focused on **Information Security**, exploring **Blue Team** tools, analysis, and best practices.
 
-- 🛡️ **Blue Team Lab:** [Blue-Team-Lab(PT-BR)](Blue-Team-Lab/PT-BR/Blue-Team-Lab-PT-BR.md)
+- 🛡️ **Blue Team Lab:** [Blue-Team-Lab(PT-BR)](Blue-Team-Lab(PT-BR)/Introdução.md)
 
 ---
 
 ## Side Projects
 - 📰 **CyberResumo (LinkedIn):** A weekly digest of the top Information Security news, focusing on real-world impact.
 - 👁️ **An Eye on InfoSec (LinkedIn):** Weekly in-depth analysis of a relevant topic in the Cybersecurity field.
+
+---
+
+## 🤝 Contribution Guide
+
+To ensure the quality and consistency of this project, please review our [contribution standards](Contribution-Guide.md) before submitting any changes.
+
+
+---
+
+## ⚖️ Professional Code of Ethics
+
+This [personal code of ethics](Professional-Code-of-Ethics.md) defines the professional and technical standards I adhere to in information security practice, ensuring integrity, confidentiality, and accountability in all activities.
 
 ---
 

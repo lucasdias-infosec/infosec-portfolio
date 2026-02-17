@@ -33,10 +33,10 @@ theme:
 nav:
   - Home: index.md
   - Project Blue-Team-Lab (PT-BR):
-      - Introdução: Blue-Team-Lab/PT-BR/Blue-Team-Lab-PT-BR.md
+      - Introdução: Blue-Team-Lab(PT-BR)/Introdução.md
       - Base da Infraestrutura e Instalação de Ferramentas:
-          - Base da Infraestrutura: Blue-Team-Lab/PT-BR/00-base-infra.md
-      - Guia-de-Contribuições: Blue-Team-Lab/PT-BR/Guia-de-Contribuições.md
+          - Base da Infraestrutura: Blue-Team-Lab(PT-BR)/00-base-infra.md
+  - Guia-de-Contribuições: Contribution-Guide.md
   - Professional Code of Ethics: Professional-Code-of-Ethics.md
 extra:
   social:
