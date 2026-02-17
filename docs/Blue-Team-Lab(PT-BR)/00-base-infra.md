@@ -28,7 +28,7 @@ O ambiente visa possibilitar o monitoramento de eventos, a análise de logs, a d
 - Identificação de evidências geradas por ataques comuns em ambientes corporativos,
 - Aplicação de medidas de hardening e boas práticas de defesa,
 - Demonstração do processo de correlação de eventos e tratamento de alertas por um analista de segurança.
-- 
+
 ### 2.1 Escopo e Limitações
 
 Este laboratório tem como escopo o estudo prático de mecanismos de monitoramento, detecção, análise e resposta a incidentes em um ambiente controlado e reduzido, com foco em atividades de Blue Team.
@@ -78,9 +78,9 @@ A escolha do Oracle VirtualBox como plataforma de virtualização baseou-se nos 
 - Licenciamento e Custo: O VirtualBox é distribuído sob licença open source, permitindo seu uso gratuito em contextos pessoais, acadêmicos e laboratoriais. Essa característica reduz custos e amplia a flexibilidade do ambiente,
 - Leveza e Baixa Exigência de Hardware: O VirtualBox apresenta baixo consumo de recursos em comparação com outras soluções de virtualização, possibilitando a execução de múltiplas máquinas virtuais mesmo em hardware com limitações de memória e armazenamento,
 - Suporte à Documentação Visual: A ferramenta permite a captura de screenshots diretamente pela interface gráfica, o que facilita:
- - A documentação dos procedimentos,
- - A elaboração de relatórios técnicos,
- - A registro visual de evidências durante os estudos.
+  - A documentação dos procedimentos,
+  - A elaboração de relatórios técnicos,
+  - A registro visual de evidências durante os estudos.
 - Facilidade de Uso e Comunidade: A interface intuitiva e a ampla disponibilidade de documentação tornam o VirtualBox acessível, ao mesmo tempo em que sua comunidade ativa contribui para a rápida resolução de problemas e dúvidas técnicas,
 - Compatibilidade Ampla: O VirtualBox oferece suporte a diversos sistemas operacionais, tanto como host quanto como guest, incluindo Windows, Linux e BSD. Essa compatibilidade é essencial para a simulação de ambientes corporativos heterogêneos.
 
