@@ -1,52 +1,24 @@
-name: "Security Triage"
+name: Security Checks
 
 on:
+  push:
   pull_request:
-    types:
-      - opened
-      - edited
 
 jobs:
-  validation:
-    name: "Manual Checklist Verification"
+  sensitiveFilesCheck:
     runs-on: ubuntu-latest
+
     steps:
-      - name: Checkout code
+      - name: Checkout repository
         uses: actions/checkout@v4
 
-      - name: Check for Correct Checklist Format
-        env:
-          PR_BODY: ${{ github.event.pull_request.body }}
+      - name: Detect sensitive files
         run: |
-          echo "Scanning Pull Request for mandatory security compliance..."
-
-          # 1. Validação de Formato (Garante que não há caracteres estranhos nos colchetes)
-          if echo "$PR_BODY" | grep -E "\[([^xX ]| {2,}|[xX] )\]" | grep -q "\["; then
-            echo "❌ ERROR: Invalid format! Use only [x] to mark items."
+          echo "Scanning for sensitive file extensions..."
+          if git ls-files | grep -E '\.(env|key|pem|p12|pfx)$'; then
+            echo "❌ Sensitive file detected!"
             exit 1
+          else
+            echo "✅ No sensitive files found."
           fi
-
-          # 2. SEÇÕES OBRIGATÓRIAS (Segurança e Validação Técnica)
-          # Buscamos as 6 palavras-chave únicas das seções superiores
-          MAND_COUNT=$(echo "$PR_BODY" | grep -Ei "sensitive|ethical|malicious|mkdocs|assets|external" | grep -ci "\[x\]")
-          
-          if [ "$MAND_COUNT" -lt 6 ]; then
-            echo "❌ ERROR: You must check ALL 6 mandatory items in Infosec and Technical Validation."
-            echo "Currently marked: $MAND_COUNT/6"
-            exit 1
-          fi
-
-          # 3. TYPE OF CHANGE (Apenas 1 item permitido)
-          # Filtramos pelos emojis específicos do seu template
-          TYPE_COUNT=$(echo "$PR_BODY" | grep -E "📖|🛠️|🐞|✨" | grep -ci "\[x\]")
-
-          if [ "$TYPE_COUNT" -eq 0 ]; then
-            echo "❌ ERROR: Please select at least one 'Type of Change'."
-            exit 1
-          elif [ "$TYPE_COUNT" -gt 1 ]; then
-            echo "❌ ERROR: Please select ONLY ONE 'Type of Change' (you marked $TYPE_COUNT)."
-            exit 1
-          fi
-
-          echo "✅ Success: All requirements met!"
           
