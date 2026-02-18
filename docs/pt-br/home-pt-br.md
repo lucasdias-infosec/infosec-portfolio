@@ -36,7 +36,3 @@ Para garantir a qualidade e consistência deste projeto, revise os [padrões de 
 ## ⚖️ Código de Ética Profissional  
 
 Este [código de ética pessoal](professional-code-of-ethics-pt-br.md) define os padrões profissionais e técnicos que sigo na prática da segurança da informação, assegurando integridade, confidencialidade e responsabilidade em todas as atividades.  
-
----
-
-> 💡 “Proteger sistemas é proteger pessoas.” 💡
