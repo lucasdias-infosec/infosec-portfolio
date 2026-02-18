@@ -1,4 +1,4 @@
-# 👩🏻‍💻 Lucas Dias (pt-BR)
+# 👨🏻‍💻 Lucas Dias (pt-BR)
 
 🎓 Estudante de **Ciência da Computação** | Foco em **Segurança da Informação (Blue Team)**  
 
@@ -15,7 +15,9 @@ Sou apaixonado por **cibersegurança defensiva** e tenho uma **base teórica só
 ---
 
 ## Projetos
-[Aqui](blue-team-lab-pt-br/introducao.md) você encontrará meus projetos voltados para **Segurança da Informação**, explorando ferramentas, análises e práticas de **Blue Team**.  
+Aqui você encontrará meus projetos voltados para **Segurança da Informação**, explorando ferramentas, análises e práticas de **Blue Team**.
+
+- [Blue Time Lab](blue-team-lab-pt-br/introducao.md)
 
 ---
 
