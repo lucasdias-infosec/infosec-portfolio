@@ -18,7 +18,7 @@ I am passionate about **defensive cybersecurity** and possess a **solid theoreti
 ## Projects
 Here you will find my projects focused on **Information Security**, exploring **Blue Team** tools, analysis, and best practices.
 
-- 🛡️ [Blue Team Lab (pt-BR)](../pt-br/blue-team-lab-pt-br/introducao.md)
+- 🛡️ [Blue Team Lab (pt-BR)](pt-br/blue-team-lab-pt-br/introducao.md)
 
 ---
 
@@ -30,15 +30,15 @@ Here you will find my projects focused on **Information Security**, exploring **
 
 ## 🤝 Contribution Guide
 
-To ensure the quality and consistency of this project, please review our [contribution standards](contribution-guide.md) before submitting any changes.
+To ensure the quality and consistency of this project, please review our [contribution standards](en-us/contribution-guide.md) before submitting any changes.
 
 
 ---
 
 ## ⚖️ Professional Code of Ethics
 
-This [personal code of ethics](professional-code-of-ethics.md) defines the professional and technical standards I adhere to in information security practice, ensuring integrity, confidentiality, and accountability in all activities.
+This [personal code of ethics](en-us/professional-code-of-ethics.md) defines the professional and technical standards I adhere to in information security practice, ensuring integrity, confidentiality, and accountability in all activities.
 
 ---
 
-[Versão pt-BR](../pt-br/home-pt-br.md)
+[Versão pt-BR](pt-br/home-pt-br.md)
