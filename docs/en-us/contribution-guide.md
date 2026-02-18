@@ -10,20 +10,20 @@ All contributions should follow ethical and professional standards:
 
 ## 🚀 How to Contribute
 
-### 1. Create a Branch
+### Create a Branch
 Do not make changes directly on `main`. Create a branch for your modification. 
 
-# File Organization
+### 📂 File Organization
 
 - **New documents:** `docs/`
 - **Images and media:** `docs/assets/`
 
-# Standardization
+### 📏 Standardization
 
 - Follow the existing writing style in the Markdown files.
 - Check the [Style Guide](style-guide.md) for details on formatting, headings, and conventions.
 
-# Pull Requests
+### 🔎 Pull Requests
 
 - Fill out the PR template (in English) correctly to make review easier.
 - Include a clear description of your changes and objectives.
