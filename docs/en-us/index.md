@@ -41,4 +41,4 @@ This [personal code of ethics](professional-code-of-ethics.md) defines the profe
 
 ---
 
-[Versão pt-BR](../pt-br/index-pt-br.md)
+[Versão pt-BR](../pt-br/index-pt-br/)
