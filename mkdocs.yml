@@ -1,5 +1,5 @@
 site_name: Lucas Dias Ramos - My Docs
-site_url: https://lucasdias-infosec.github.io/infosec-portfolio/en-us
+site_url: https://lucasdias-infosec.github.io/infosec-portfolio/
 repo_url: https://github.com/lucasdias-infosec/infosec-portfolio/
 repo_name: lucasdias-infosec/infosec-portfolio/
 edit_uri: edit/main/docs/
@@ -31,7 +31,7 @@ theme:
     - content.action.edit
     - content.action.view
 nav:
-  - Home: en-us/index.md
+  - Home: index.md
   - Project Blue-Team-Lab (PT-BR):
       - Introdução: pt-br/blue-team-lab-pt-br/introducao.md
       - Base da Infraestrutura e Instalação de Ferramentas:
