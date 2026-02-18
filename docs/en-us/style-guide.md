@@ -62,4 +62,8 @@ ssh user@host.example
 
 - All content must follow ethics and infosec best practices.  
 - Never submit real client, network, or system data.  
-- Any attack examples must be simulated in a safe environment.  
+- Any attack examples must be simulated in a safe environment.
+
+---
+
+[Versão pt-BR](../pt-br/style-guide-pt-br.md)
