@@ -17,7 +17,7 @@ Sou apaixonado por **cibersegurança defensiva** e tenho uma **base teórica só
 ## Projetos
 Aqui você encontrará meus projetos voltados para **Segurança da Informação**, explorando ferramentas, análises e práticas de **Blue Team**.
 
-- [Blue Time Lab](blue-team-lab-pt-br/introducao.md)
+- [🛡️ Blue Time Lab](blue-team-lab-pt-br/introducao.md)
 
 ---
 
