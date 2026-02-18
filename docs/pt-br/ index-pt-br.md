@@ -27,7 +27,7 @@ Sou apaixonado por **cibersegurança defensiva** e tenho uma **base teórica só
 
 ## 🤝 Guia de Contribuição  
 
-Para garantir a qualidade e consistência deste projeto, revise os [padrões de contribuição](contribution-guide-pr-br.md) antes de enviar qualquer alteração.  
+Para garantir a qualidade e consistência deste projeto, revise os [padrões de contribuição](contribution-guide-pt-br.md) antes de enviar qualquer alteração.  
 
 ---
 
