@@ -1,4 +1,4 @@
-# 👨🏻‍💻 Lucas Dias (pt-BR)
+# 👨🏻‍💻 Lucas Dias
 
 🎓 Estudante de **Ciência da Computação** | Foco em **Segurança da Informação (Blue Team)**  
 
