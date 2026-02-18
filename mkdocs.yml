@@ -31,13 +31,13 @@ theme:
     - content.action.edit
     - content.action.view
 nav:
-  - Home: index.md
+  - Home: en-us/index.md
   - Project Blue-Team-Lab (PT-BR):
-      - Introdução: blue-team-lab(pt-br)/introdução.md
+      - Introdução: pt-br/blue-team-lab-pt-br/introducao.md
       - Base da Infraestrutura e Instalação de Ferramentas:
-          - Base da Infraestrutura: blue-team-lab(pt-br)/00-base-infra.md
-  - Contribution-Guide: contribution-guide.md
-  - Professional Code of Ethics: professional-code-of-ethics.md
+          - Base da Infraestrutura: pt-br/blue-team-lab-pt-br/00-base-infra.md
+  - Contribution-Guide: en-us/contribution-guide.md
+  - Professional Code of Ethics: en-us/professional-code-of-ethics.md
 extra:
   social:
     - icon: fontawesome/brands/github

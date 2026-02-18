@@ -85,3 +85,7 @@ Where applicable, practices are aligned with recognized industry frameworks and 
 *This document is periodically reviewed to remain aligned with evolving security standards and professional practices.*
 
 **Last Updated:** February 16, 2026
+
+---
+
+[Versão pt-BR](../pt-br/professional-code-of-ethics-pt-br.md)

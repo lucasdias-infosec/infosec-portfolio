@@ -18,7 +18,7 @@ I am passionate about **defensive cybersecurity** and possess a **solid theoreti
 ## Projects
 Here on GitHub, you will find my projects focused on **Information Security**, exploring **Blue Team** tools, analysis, and best practices.
 
-- 🛡️ **Blue Team Lab:** [Blue-Team-Lab(PT-BR)](blue-team-lab(pt-br)/introdução.md)
+- 🛡️ **Blue Team Lab:** [Blue-Team-Lab(PT-BR)](../pt-br/blue-team-lab-pt-br/introducao.md)
 
 ---
 
@@ -41,4 +41,4 @@ This [personal code of ethics](professional-code-of-ethics.md) defines the profe
 
 ---
 
-> 💡 "Protecting systems is protecting people." 💡
+[Versão pt-BR](../pt-br/home-pt-br.md)

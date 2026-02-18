@@ -28,3 +28,7 @@ Do not make changes directly on `main`. Create a branch for your modification.
 - Fill out the PR template (in English) correctly to make review easier.
 - Include a clear description of your changes and objectives.
 - Ensure your PR is reviewed before merging.
+
+---
+
+[Versão pt-BR](../pt-br/contribution-guide-pt-br.md)
