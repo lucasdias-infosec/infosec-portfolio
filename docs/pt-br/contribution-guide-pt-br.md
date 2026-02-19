@@ -1,6 +1,8 @@
 # Guia de Contribuição
 
-Obrigado pelo seu interesse em contribuir! Para manter o projeto organizado, seguro e claro, siga as diretrizes abaixo.
+Agradecemos seu interesse em contribuir! Para manter o projeto organizado, seguro e consistente, siga as diretrizes abaixo.
+
+Todos os participantes devem cumprir o [Código de Conduta](codigo-de-conduta.md) do projeto. A participação implica concordância com os padrões de comportamento profissional e técnico nele estabelecidos.
 
 ---
 
@@ -8,36 +10,39 @@ Obrigado pelo seu interesse em contribuir! Para manter o projeto organizado, seg
 
 Todas as contribuições devem seguir padrões éticos e profissionais:
 
-- **Dados Sensíveis:** Nunca envie Pull Requests contendo dados reais de rede, senhas em texto plano, tokens ou chaves privadas.  
-- **Uso Ético:** Todo o conteúdo deve ser voltado para pesquisa em segurança defensiva e aprendizado ético.
+- **Dados Sensíveis:** Nunca envie Pull Requests contendo dados reais de rede, senhas em texto plano, tokens, chaves privadas ou informações provenientes de ambientes de produção.
+- **Uso Ético:** Todo o conteúdo deve ter foco em segurança defensiva, pesquisa responsável e aprendizado ético.
 
 ---
 
 ## 🚀 Como Contribuir
 
-### 1. Crie uma Branch
+### Criar uma Branch
 
-Não faça alterações diretamente na `main`.  
-Crie uma branch específica para sua modificação.
+Não realize alterações diretamente na `main`. Crie uma branch dedicada para sua modificação.
 
 ---
 
-## 📂 Organização de Arquivos
+### 📂 Organização de Arquivos
 
-- **Novos documentos:** `docs/`  
+- **Novos documentos:** `docs/`
 - **Imagens e mídias:** `docs/assets/`
 
 ---
 
-## 📏 Padronização
+### 📏 Padronização
 
-- Siga o estilo de escrita já existente nos arquivos Markdown.  
-- Consulte o [Guia de Estilo](style-guide-pt-br.md) para detalhes sobre formatação, títulos e convenções.
+- Siga o estilo de escrita já utilizado nos arquivos Markdown.
+- Consulte o [Guia de Estilo](style-guide-pt-br.md) para regras de formatação, títulos e convenções.
+- Mantenha precisão técnica e consistência terminológica.
 
 ---
 
-## 🔎 Pull Requests
+### 🔎 Pull Requests
 
-- Preencha corretamente o template de PR (em inglês) para facilitar a revisão.  
-- Inclua uma descrição clara das alterações e dos objetivos.  
-- Certifique-se de que seu PR seja revisado antes do merge.
+- Preencha corretamente o template de Pull Request.
+- Forneça uma descrição clara das alterações e sua justificativa técnica.
+- Referencie Issues relacionadas quando aplicável.
+- Certifique-se de que a contribuição esteja em conformidade com os padrões de segurança e documentação antes de solicitar revisão.
+
+Todos os Pull Requests estão sujeitos à revisão antes da aprovação e merge.

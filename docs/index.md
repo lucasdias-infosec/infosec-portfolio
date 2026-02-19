@@ -32,6 +32,11 @@ Here you will find my projects focused on **Information Security**, exploring **
 
 To ensure the quality and consistency of this project, please review our [contribution standards](en-us/contribution-guide.md) before submitting any changes.
 
+---
+
+## 📜 Code of Conduct
+
+All contributors are expected to adhere to the project's [Code of Conduct](en-us/code-of-conduct.md), which defines the standards of professional behavior and collaboration.
 
 ---
 
