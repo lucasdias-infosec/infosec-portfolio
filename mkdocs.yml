@@ -36,9 +36,10 @@ nav:
       - Introduction: en-us/blue-team-lab/introduction.md
       - Infrastructure Base and Tool Installation:
           - Infrastructure Base: en-us/blue-team-lab/00-base-infra.md
-  - Code of Conduct: en-us/code-of-conduct.md
-  - Contribution-Guide: en-us/contribution-guide.md
-  - Professional Code of Ethics: en-us/professional-code-of-ethics.md
+      - Ethics and Contribution:
+          - Code of Conduct: en-us/code-of-conduct.md
+          - Contribution-Guide: en-us/contribution-guide.md
+          - Professional Code of Ethics: en-us/professional-code-of-ethics.md
 extra:
   social:
     - icon: fontawesome/brands/github
