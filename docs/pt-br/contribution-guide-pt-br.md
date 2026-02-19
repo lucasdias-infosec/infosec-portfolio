@@ -33,7 +33,7 @@ Não realize alterações diretamente na `main`. Crie uma branch dedicada para s
 ### 📏 Padronização
 
 - Siga o estilo de escrita já utilizado nos arquivos Markdown.
-- Consulte o [Guia de Estilo](style-guide.md) para regras de formatação, títulos e convenções.
+- Consulte o [Guia de Estilo](style-guide-pt-br.md) para regras de formatação, títulos e convenções.
 - Mantenha precisão técnica e consistência terminológica.
 
 ---
