@@ -2,7 +2,7 @@
 
 Agradecemos seu interesse em contribuir! Para manter o projeto organizado, seguro e consistente, siga as diretrizes abaixo.
 
-Todos os participantes devem cumprir o [Código de Conduta](code-of-conduct.md) do projeto. A participação implica concordância com os padrões de comportamento profissional e técnico nele estabelecidos.
+Todos os participantes devem cumprir o [Código de Conduta](codigo-de-conduta.md) do projeto. A participação implica concordância com os padrões de comportamento profissional e técnico nele estabelecidos.
 
 ---
 
