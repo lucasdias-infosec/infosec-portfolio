@@ -32,10 +32,10 @@ theme:
     - content.action.view
 nav:
   - Home: index.md
-  - Project Blue-Team-Lab (PT-BR):
-      - Introdução: pt-br/blue-team-lab-pt-br/introducao.md
-      - Base da Infraestrutura e Instalação de Ferramentas:
-          - Base da Infraestrutura: pt-br/blue-team-lab-pt-br/00-base-infra.md
+  - Project Blue-Team-Lab:
+      - Introduction: en-us/blue-team-lab/introduction.md
+      - Infrastructure Base and Tool Installation:
+          - Infrastructure Base: en-us/blue-team-lab/00-base-infra.md
   - Contribution-Guide: en-us/contribution-guide.md
   - Professional Code of Ethics: en-us/professional-code-of-ethics.md
 extra:
