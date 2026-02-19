@@ -1,4 +1,5 @@
-# Introdução
+# Base da Infraestrutura
+## Introdução
 
 Esta etapa do laboratório consiste na construção da infraestrutura fundamental que servirá como base para todas as ferramentas de segurança implementadas posteriormente.
 Antes da instalação de qualquer solução de monitoramento ou detecção, foi priorizada a criação de um ambiente sólido, seguro e controlado. A abordagem adotada considera princípios de arquitetura defensiva, isolamento de ambiente e boas práticas de hardening desde a camada mais baixa do sistema.
