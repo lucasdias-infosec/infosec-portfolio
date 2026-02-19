@@ -53,3 +53,7 @@ Each directory contains:
 ---
 
 ## 🔧 Implemented Tools (under construction)
+
+---
+
+[Versão pt-BR](../../pt-br/blue-team-lab-pt-br/introducao.md)
