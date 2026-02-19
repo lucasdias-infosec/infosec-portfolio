@@ -372,3 +372,7 @@ This stage was essential for applying fundamental security concepts such as:
 
 With the foundation consolidated, the lab is prepared for the installation and configuration of security tools, enabling the simulation of real-world monitoring and incident analysis scenarios.
 The created infrastructure is not only functional but structured with a focus on security best practices from the most fundamental system layer.
+
+---
+
+[Versão pt-BR](../../pt-br/blue-team-lab-pt-br/00-base-infra.md)
