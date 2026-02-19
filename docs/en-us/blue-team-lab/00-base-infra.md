@@ -256,3 +256,119 @@ This confirms that:
 - The boot process was successfully completed,
 - LUKS and LVM are operational,
 - The server is ready for security tool configuration.
+
+## 18. Logical Volume Configuration over Encrypted Layer (LUKS + LVM)
+
+With the system already installed over an encrypted layer (LUKS) and using LVM for logical volume management, dedicated volumes were created for:
+
+- System and security tool logs,
+- Vulnerable application data and auxiliary services.
+
+This segmentation aims to provide:
+
+- Improved structural organization,
+- Isolation between system, logs, and application data,
+- Greater storage control,
+- Simulation of best practices adopted in corporate environments.
+
+### 18.1 LVM Structure Preparation
+
+#### 18.1.2 Volume Group Verification
+
+Available free space was identified in the `ubuntu-vg` Volume Group, residing on the encrypted LUKS container.
+This verification ensured that new volumes could be created without resizing the root volume.
+
+#### 18.1.3 Logical Volume Creation
+
+Two new Logical Volumes were created:
+
+- `lv_logs`
+
+Size: 10 GB  
+Purpose: Storage of system logs, Suricata, Wazuh, Rsyslog, and other monitoring tools.
+
+- `lv_srv`
+
+Size: Remaining available space in the Volume Group  
+Purpose: Storage of vulnerable applications (e.g., DVWA, Juice Shop) and associated data.
+
+The creation of these volumes maintains separation between:
+
+- Operating system (`/`),
+- Critical logs (`/var/log`),
+- Application data (`/srv`).
+
+### 18.2 Volume Formatting and Preparation
+
+#### 18.2.1 Filesystem
+
+The volumes were formatted with:
+
+- Filesystem: ext4.
+
+Justification:
+
+- Stable,
+- Lightweight,
+- Widely supported,
+- Suitable for laboratory environments.
+
+#### 18.2.2 Migration of Existing Data
+
+To ensure integrity and preservation of permissions:
+
+- The `rsync` tool was installed,
+- Existing content from `/var/log` was synchronized to the new dedicated volume.
+
+The use of `rsync` allowed:
+
+- Preservation of permissions,
+- Preservation of attributes,
+- Preservation of timestamps,
+- Reduced risk of inconsistencies.
+
+### 18.3 Persistence and Permanent Mounting
+
+#### 18.3.1 Updating the `/etc/fstab` File
+
+To ensure automatic mounting during system startup, the `/etc/fstab` file was edited to include the following entries:
+
+- `/dev/mapper/ubuntu--vg-lv_logs` → mounted at `/var/log`,
+- `/dev/mapper/ubuntu--vg-lv_srv` → mounted at `/srv`.
+
+This configuration ensures that:
+
+- The volumes are automatically mounted during boot,
+- The system maintains structural consistency after reboots.
+
+#### 18.3.2 System Configuration Update
+
+After modifying `fstab`, the following command was executed:
+
+- `systemctl daemon-reload`
+
+### 18.4 Validation
+
+After rebooting the system, the following was verified:
+
+- `/var/log` is mounted on the dedicated `lv_logs` volume,
+- `/srv` is mounted on the `lv_srv` volume,
+- The system boots without errors,
+- The LUKS container is correctly unlocked during boot,
+- LVM recognizes all created Logical Volumes.
+
+---
+
+# Conclusion
+
+Building the infrastructure foundation established the technical pillars of the lab, ensuring a controlled, isolated, and secure environment for implementing monitoring and detection tools.
+The use of UEFI, encryption with LUKS, and volume management with LVM provided greater storage control and increased data protection. Network segmentation and virtual environment isolation ensure that tests can be performed without external impact.
+This stage was essential for applying fundamental security concepts such as:
+
+- Defense in depth,
+- Principle of least privilege,
+- Environment isolation,
+- Architectural planning.
+
+With the foundation consolidated, the lab is prepared for the installation and configuration of security tools, enabling the simulation of real-world monitoring and incident analysis scenarios.
+The created infrastructure is not only functional but structured with a focus on security best practices from the most fundamental system layer.
