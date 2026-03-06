@@ -36,6 +36,7 @@ After installation, the service was automatically registered within systemd.
 ### 3.1 Network Interface Identification
 
 Network interfaces were identified using:
+
 ```bash
 ip a
 ```
@@ -65,7 +66,7 @@ Was adjusted to:
 
 Detection rules were updated using:
 
-```bach
+```bash
 sudo suricata-update
 ```
 
@@ -100,7 +101,7 @@ A practical test was performed to validate both Suricata detection and Wazuh int
 
 The following command was executed:
 
-```bach
+```bash
 curl http://testmynids.com
 ```
 
@@ -110,7 +111,7 @@ This domain intentionally triggers IDS signatures.
 
 Real-time log monitoring:
 
-```bach
+```bash
 sudo tail -f /var/log/suricata/fast.log
 ```
 
