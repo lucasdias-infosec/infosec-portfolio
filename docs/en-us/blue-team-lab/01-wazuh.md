@@ -57,6 +57,7 @@ To confirm detection functionality, controlled tests were performed.
 ### 4.1. Simulation of SSH Authentication Attempts
 
 Multiple login attempts were executed using a non-existent user:
+
 ```bash
 ssh nonexistent_user@<vm_ip>
 ```
@@ -88,6 +89,7 @@ This confirms that:
 ## 7. Interface Access
 
 Dashboard access is performed via HTTPS:
+
 ```bash
 https://<vm_ip>
 ```
