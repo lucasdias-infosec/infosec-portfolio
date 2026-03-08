@@ -60,7 +60,6 @@ Was adjusted to:
 
 - Specify the correct network interfaces
 - Ensure proper traffic capture
-- Maintain operation in IDS mode (non-inline)
 
 ### 3.3 Signature Update
 
