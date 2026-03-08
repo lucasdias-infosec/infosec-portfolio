@@ -3,6 +3,7 @@
 ## 1. Objetivo
 
 Implementar uma camada de auditoria no nível do kernel Linux utilizando o Auditd, com integração ao Wazuh, permitindo o monitoramento estruturado da execução de binários sensíveis.
+
 O foco desta etapa não foi o monitoramento isolado de um único comando, mas sim:
 
 - Ativar o subsistema de auditoria do kernel.
@@ -11,6 +12,7 @@ O foco desta etapa não foi o monitoramento isolado de um único comando, mas si
 - Validar o fluxo completo de detecção.
 
 Para fins de validação técnica, foi utilizada uma regra de monitoramento do utilitário base64 como prova de conceito (PoC).
+
 Novas regras e políticas de auditoria serão implementadas futuramente e documentadas de forma específica.
 
 ## 2. Instalação e Ativação do Auditd
@@ -91,62 +93,57 @@ Para transformar o evento em alerta relevante, foi criada uma regra de sobreposi
 Lógica aplicada:
 
 Se o evento possuir Rule ID 80700
+
 E audit.key = monitor_base64
+
 Elevar o nível para 10
 
 Após essa modificação, o evento passou a ser classificado como alerta crítico no Dashboard.
 
-7. Validação Operacional
-7.1 Execução do Binário Monitorado
+## 7. Validação Operacional
+### 7.1. Execução do Binário Monitorado
+
+```bash
 echo "teste" | base64
-7.2 Teste com wazuh-logtest
+```
+
+### 7.2. Teste com wazuh-logtest
 
 Validação da decodificação correta dos campos:
 
-audit.exe
+- audit.exe
+- audit.key
+- associação com a regra customizada
 
-audit.key
-
-associação com a regra customizada
-
-7.3 Verificação no Dashboard
+### 7.3. Verificação no Dashboard
 
 O alerta foi visualizado contendo:
 
-Caminho do executável
+- Caminho do executável
+- Usuário responsável
+- Timestamp
+- Rule ID
+- Nível elevado de severidade
 
-Usuário responsável
-
-Timestamp
-
-Rule ID
-
-Nível elevado de severidade
-
-8. Direcionamento Futuro
+## 8. Direcionamento Futuro
 
 A implementação do monitoramento do base64 serviu como etapa inicial de validação da arquitetura.
 
 A estrutura estabelecida permite a expansão futura para:
 
-Monitoramento de múltiplos binários sensíveis (ex: curl, wget, nc, bash)
-
-Monitoramento de alterações em arquivos críticos
-
-Auditoria de privilégios elevados
-
-Mapeamento de regras para frameworks como MITRE ATT&CK
+- Monitoramento de múltiplos binários sensíveis (ex: curl, wget, nc, bash)
+- Monitoramento de alterações em arquivos críticos
+- Auditoria de privilégios elevados
+- Mapeamento de regras para frameworks como MITRE ATT&CK
 
 Essas expansões serão documentadas em módulos específicos, mantendo a organização e rastreabilidade do laboratório.
 
-9. Justificativa Arquitetural
+## 9. Justificativa Arquitetural
 
 A ativação do Auditd adiciona ao laboratório uma camada de detecção baseada em comportamento no nível do kernel, complementando:
 
-Monitoramento de rede (Suricata)
-
-Monitoramento de host via logs tradicionais
-
-Correlação centralizada no Wazuh
+- Monitoramento de rede (Suricata)
+- Monitoramento de host via logs tradicionais
+- Correlação centralizada no Wazuh
 
 Essa abordagem reforça o modelo de Defense in Depth e prepara o ambiente para evoluir de um laboratório funcional para uma arquitetura estruturada de engenharia de detecção.
