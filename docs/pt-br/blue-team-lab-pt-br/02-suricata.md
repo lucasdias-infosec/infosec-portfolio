@@ -1,90 +1,91 @@
-Implementação do Suricata como IDS/IPS no Laboratório
-1. Contextualização
+# Implementação do Suricata como IDS/IPS no Laboratório
+
+## 1. Contextualização
 
 O Suricata é um mecanismo de monitoramento e detecção de intrusão de rede (IDS), com capacidade adicional de operar como IPS e ferramenta de Network Security Monitoring (NSM).
 
 Sua implementação no laboratório teve como objetivo:
 
-Monitorar o tráfego de rede da máquina virtual.
+- Monitorar o tráfego de rede da máquina virtual.
+- Detectar padrões de ataque baseados em assinaturas.
+- Integrar eventos de rede ao SIEM (Wazuh).
+- Expandir a visibilidade além de logs locais do sistema operacional.
 
-Detectar padrões de ataque baseados em assinaturas.
-
-Integrar eventos de rede ao SIEM (Wazuh).
-
-Expandir a visibilidade além de logs locais do sistema operacional.
-
-Por se tratar de ambiente virtualizado (VirtualBox), foi necessário garantir que o Suricata estivesse monitorando as interfaces corretas em modo promíscuo.
-
-2. Instalação do Suricata
+## 2. Instalação do Suricata
 
 A instalação foi realizada em sistema baseado em Debian/Ubuntu por meio dos repositórios oficiais:
 
+```bash
 sudo apt update
 sudo apt install suricata -y
+```
 
 Essa abordagem garante:
 
-Atualizações automatizadas via APT.
-
-Compatibilidade com o sistema.
-
-Instalação de dependências necessárias.
+- Atualizações automatizadas via APT.
+- Compatibilidade com o sistema.
+- Instalação de dependências necessárias.
 
 Após a instalação, o serviço foi automaticamente registrado no systemd.
 
-3. Configuração do Motor de Detecção
-3.1 Identificação das Interfaces de Rede
+## 3. Configuração do Motor de Detecção
+### 3.1. Identificação das Interfaces de Rede
 
 A identificação das interfaces foi realizada com:
 
+```bash
 ip a
+```
 
 As interfaces monitoradas foram:
 
-enp0s3
-
-enp0s8
+- enp0s3
+- enp0s8
 
 A escolha se deu com base na arquitetura de rede do laboratório (interface NAT e interface interna).
 
-3.2 Configuração do suricata.yaml
+### 3.2. Configuração do suricata.yaml
 
 O arquivo principal de configuração:
 
+```bash
 /etc/suricata/suricata.yaml
+```
 
 Foi ajustado para:
 
-Definir as interfaces corretas.
+- Definir as interfaces corretas.
+- Garantir captura adequada de tráfego.
 
-Garantir captura adequada de tráfego.
-
-Manter o modo IDS (não inline).
-
-3.3 Atualização das Assinaturas
+### 3.3. Atualização das Assinaturas
 
 As regras de detecção foram atualizadas utilizando:
 
+```bash
 sudo suricata-update
+```
 
 Essa etapa é fundamental para:
 
-Manter o mecanismo atualizado contra ameaças conhecidas.
+- Manter o mecanismo atualizado contra ameaças conhecidas.
+- Incorporar novas assinaturas da comunidade.
+- Aumentar a cobertura de detecção.
 
-Incorporar novas assinaturas da comunidade.
-
-Aumentar a cobertura de detecção.
-
-3.4 Reinicialização do Serviço
+### 3.4. Reinicialização do Serviço
 
 Após alterações e atualização das regras:
 
+```bash
 sudo systemctl restart suricata
+```
 
 O status foi validado com:
 
+```bash
 sudo systemctl status suricata
-4. Integração com o Wazuh
+```
+
+## 4. Integração
 
 Para centralizar os eventos de segurança, os logs do Suricata foram integrados ao Wazuh.
 
