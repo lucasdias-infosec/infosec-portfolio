@@ -1,137 +1,141 @@
-Relatório de Implementação: Centralização de Logs com Rsyslog, Auditd, Suricata e Wazuh
-1. Objetivo
+# Relatório de Implementação: Centralização de Logs com Rsyslog, Auditd, Suricata e Wazuh
+
+# 1. Objetivo
 
 Implementar uma arquitetura centralizada de coleta e correlação de eventos de segurança, utilizando o Rsyslog como camada intermediária entre os geradores de log (Auditd e Suricata) e o mecanismo de análise (Wazuh).
 
 O objetivo desta etapa foi:
 
-Unificar logs de sistema e rede.
+- Unificar logs de sistema e rede.
+- Evitar duplicidade de leitura por múltiplos agentes.
+- Separar responsabilidades entre coleta, transporte e análise.
+- Preparar o ambiente para futura escalabilidade.
 
-Evitar duplicidade de leitura por múltiplos agentes.
-
-Separar responsabilidades entre coleta, transporte e análise.
-
-Preparar o ambiente para futura escalabilidade.
-
-2. Visão Geral da Arquitetura
+## 2. Visão Geral da Arquitetura
 
 A solução consolidou três camadas de segurança em um único servidor, com funções bem definidas:
 
-Auditd: monitora eventos no nível do kernel.
-
-Suricata: realiza inspeção de tráfego de rede (IDS).
-
-Rsyslog: atua como coletor e encaminhador (forwarder) de logs.
-
-Wazuh Manager: recebe, decodifica, correlaciona e gera alertas no Dashboard.
+- Auditd: monitora eventos no nível do kernel.
+- Suricata: realiza inspeção de tráfego de rede (IDS).
+- Rsyslog: atua como coletor e encaminhador (forwarder) de logs.
+- Wazuh Manager: recebe, decodifica, correlaciona e gera alertas no Dashboard.
 
 Fluxo de dados estabelecido:
 
 Auditd / Suricata → Rsyslog → Wazuh Manager → Dashboard
 
-3. Instalação e Garantia do Serviço Rsyslog
+## 3. Instalação e Garantia do Serviço Rsyslog
 
 Foi garantida a instalação do serviço com:
 
+```bash
 sudo apt update
 sudo apt install rsyslog -y
+```
 
 Validação:
 
+```bash
 sudo systemctl status rsyslog
+```
 
 O serviço permaneceu ativo e habilitado para inicialização automática.
 
-4. Configuração da Ponte de Logs no Rsyslog
-4.1 Criação do Arquivo de Configuração
+## 4. Configuração da Ponte de Logs no Rsyslog
+### 4.1. Criação do Arquivo de Configuração
 
 Arquivo criado:
 
+```bash
 /etc/rsyslog.d/99-monitoring.conf
-4.2 Leitura de Arquivos (imfile)
+```
+
+### 4.2. Leitura de Arquivos (imfile)
 
 Arquivos monitorados:
 
+```bash
 /var/log/audit/audit.log
-
 /var/log/suricata/eve.json
+```
 
-4.3 Encaminhamento (omfwd)
+# 4.3. Encaminhamento (omfwd)
 
 Encaminhamento configurado para:
 
-<IP_DO_MANAGER>:515
+* <IP_DO_MANAGER>:515
 
 Diretiva utilizada:
 
+```bash
 *.* @<IP_DO_MANAGER>:515
-Justificativa da Porta
+```
 
-Porta 515/UDP destinada ao Wazuh.
+Justificativa da Porta:
 
-Porta 514/UDP/TCP reservada para recebimento futuro de logs externos.
+- Porta 515/UDP destinada ao Wazuh.
+- Porta 514/UDP/TCP reservada para recebimento futuro de logs externos.
 
 Essa separação resolveu o conflito de binding anteriormente identificado.
 
-5. Configuração do Wazuh como Analisador
+## 5. Configuração do Wazuh como Analisador
 
 No arquivo:
 
+```bash
 /var/ossec/etc/ossec.conf
+```
 
 Bloco configurado:
 
+```bash
 <remote>
   <connection>syslog</connection>
   <port>515</port>
   <protocol>udp</protocol>
   <allowed-ips><REDE_INTERNA_DO_LAB></allowed-ips>
 </remote>
-Ajuste Arquitetural
+```
+
+### 5.1. Ajuste Arquitetural
 
 Os blocos <localfile> que realizavam leitura direta dos arquivos foram removidos, evitando:
 
-Duplicidade de logs
-
-Processamento redundante
-
-Conflitos internos
+- Duplicidade de logs
+- Processamento redundante
+- Conflitos internos
 
 A leitura passou a ser responsabilidade exclusiva do Rsyslog.
 
-6. Testes de Validação
-6.1 Teste de Sistema (Auditd)
+## 6. Testes de Validação
+### 6.1. Teste de Sistema (Auditd)
+
+```bash
 echo "teste" | base64 -d
+```
 
 Resultado esperado:
 
-Log gerado pelo Auditd
+- Log gerado pelo Auditd
+- Capturado pelo Rsyslog
+- Encaminhado ao Manager
+- Exibido no Dashboard
 
-Capturado pelo Rsyslog
+### 6.2. Teste de Rede (Suricata)
 
-Encaminhado ao Manager
-
-Exibido no Dashboard
-
-6.2 Teste de Rede (Suricata)
+```bash
 curl http://testmyids.com
+```
 
 Resultado esperado:
 
-Detecção de assinatura pelo Suricata
+- Detecção de assinatura pelo Suricata
+- Registro em eve.json
+- Encaminhamento via Rsyslog
+- Exibição de alerta contendo IP de origem e destino
 
-Registro em eve.json
-
-Encaminhamento via Rsyslog
-
-Exibição de alerta contendo IP de origem e destino
-
-7. Benefícios Arquiteturais
-7.1 Conflito Resolvido
-
-Separação das portas eliminou o erro de binding relacionado à porta 514.
-
-7.2 Separação de Responsabilidades
+## 7. Benefícios Arquiteturais
+### 7.1. Separação de Responsabilidades
 
 Geração de logs → Ferramentas específicas
 
@@ -139,24 +143,23 @@ Transporte → Rsyslog
 
 Análise e correlação → Wazuh
 
-7.3 Escalabilidade
+### 7.2. Escalabilidade
 
 Novos servidores podem ser integrados apenas instalando Rsyslog e configurando o encaminhamento para:
 
+```bash
 <IP_DO_SERVIDOR_CENTRAL>:514
+```
 
 Sem necessidade de alterar a arquitetura central.
 
-8. Justificativa Arquitetural
+## 8. Justificativa Arquitetural
 
 A adoção do Rsyslog como camada intermediária promove:
 
-Modularidade
+- Modularidade
+- Controle granular do fluxo de logs
+- Preparação para expansão
+- Organização do pipeline de eventos
 
-Controle granular do fluxo de logs
-
-Preparação para expansão
-
-Organização do pipeline de eventos
-
-A infraestrutura evolui para um modelo estruturado de centralização e correlação de logs, alinhado a práticas de ambientes corporativos.
+A infraestrutura então evolui para um modelo estruturado de centralização e correlação de logs, alinhado a práticas de ambientes corporativos.
