@@ -11,7 +11,7 @@ Its implementation in the laboratory aimed to:
 - Integrate network-level events into the Wazuh SIEM.
 - Expand visibility beyond operating system logs.
 
-2. Suricata Installation
+## 2. Suricata Installation
 
 Suricata was installed on a Debian/Ubuntu-based system using the official repositories:
 
