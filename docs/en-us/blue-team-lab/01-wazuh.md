@@ -107,3 +107,5 @@ After deployment:
 - The environment is ready for expansion with external agents.
 
 To preserve the functional state, a virtual machine snapshot was created on the hypervisor, enabling rapid rollback during future testing and integration phases.
+
+[Versão pt-BR](../../pt-br/blue-team-lab-pt-br/01-wazuh.md)
