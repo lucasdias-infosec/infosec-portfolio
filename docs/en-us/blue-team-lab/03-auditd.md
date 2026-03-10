@@ -78,7 +78,8 @@ Initially, the events arrived with:
 
 - Rule ID: 80700
 - Level: 0
-- This indicated that events were stored but did not generate visible alerts.
+
+This indicated that events were stored but did not generate visible alerts.
 
 ## 6. Custom Rule Creation on the Wazuh Manager
 
