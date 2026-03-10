@@ -9,9 +9,7 @@ Implementar uma camada de auditoria no nível do kernel Linux utilizando o Audit
 - Integrar eventos ao SIEM.
 - Validar o fluxo completo de detecção.
 
-Para fins de validação técnica, foi utilizada uma regra de monitoramento do utilitário base64 como prova de conceito (PoC).
-
-Novas regras e políticas de auditoria serão implementadas futuramente e documentadas de forma específica.
+Para fins de validação técnica, foi utilizada uma regra de monitoramento do utilitário base64 como prova de conceito (PoC). Novas regras e políticas de auditoria serão implementadas futuramente e documentadas de forma específica.
 
 ## 2. Instalação e Ativação do Auditd
 
