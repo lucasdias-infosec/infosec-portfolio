@@ -102,7 +102,7 @@ Após essa modificação, o evento passou a ser classificado como alerta crític
 echo "teste" | base64
 ```
 
-### 7.2. Teste com wazuh-logtest
+### 7.2. Teste de log com o wazuh
 
 Validação da decodificação correta dos campos:
 
