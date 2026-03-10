@@ -26,7 +26,12 @@ O laboratório simula um cenário corporativo básico com ferramentas de defesa 
 
 A construção detalhada da base está documentada em:
 
-📂 [00-base-infra](00-base-infra.md)
+- [00-base-infra](00-base-infra.md)
+- [01-wazuh](01-wazuh.md)
+- [02-suricata](02-suricata.md)
+- [03-auditd](03-auditd.md)
+- [04-rsyslog](04-rsyslog.md)
+- [SSH Configuration](sshconf.md)
 
 ---
 
