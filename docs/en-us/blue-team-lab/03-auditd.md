@@ -108,12 +108,6 @@ echo "test" | base64
 
 ### 7.2. Log Testing with Wazuh
 
-Using:
-
-```bash
-/var/ossec/bin/wazuh-logtest
-```
-
 The test confirmed:
 
 - Proper decoding of audit.exe
