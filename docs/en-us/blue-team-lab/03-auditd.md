@@ -129,11 +129,14 @@ This confirmed end-to-end functionality of the detection pipeline.
 ## 8. Future Expansion
 
 The base64 monitoring rule served as a structural validation of the auditing architecture.
+
 The established framework now allows expansion to include:
-Monitoring additional high-risk binaries (e.g., curl, wget, nc, bash)
-Tracking modifications to critical files
-Auditing privilege escalation attempts
-Mapping detection logic to frameworks such as MITRE ATT&CK
+
+- Monitoring additional high-risk binaries (e.g., curl, wget, nc, bash)
+- Tracking modifications to critical files
+- Auditing privilege escalation attempts
+- Mapping detection logic to frameworks such as MITRE ATT&CK
+
 These expansions will be documented in dedicated modules to maintain clarity and architectural organization.
 
 ## 9. Architectural Justification
