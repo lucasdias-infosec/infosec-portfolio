@@ -1,6 +1,6 @@
 # Suricata Implementation as IDS/IPS in the Laboratory Environment
 
-# 1. Context
+## 1. Context
 
 Suricata is a high-performance network intrusion detection engine (IDS) with additional capabilities to operate as:
 
