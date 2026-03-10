@@ -42,8 +42,9 @@ lab-blue-team/
  - 00-base-infra/
  - 01-wazuh/
  - 02-suricata/
- - 03-dvwa/
- - 04-juice-shop/
+ - 03-auditd/
+ - 04-rsyslog/
+ - sshconf/
 
 README.md
 
