@@ -2,8 +2,7 @@
 
 ## 1. Objective
 
-To establish a kernel-level auditing layer using Auditd on a Linux server, integrated with Wazuh for centralized monitoring and alert generation.
-The primary goal of this phase was not to monitor a single command, but to:
+To establish a kernel-level auditing layer using Auditd on a Linux server, integrated with Wazuh for centralized monitoring and alert generation. The primary goal of this phase was not to monitor a single command, but to:
 
 - Activate the Linux kernel auditing subsystem.
 - Define a structured rule creation model.
