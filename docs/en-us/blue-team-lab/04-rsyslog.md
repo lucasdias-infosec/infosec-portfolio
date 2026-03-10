@@ -42,7 +42,7 @@ sudo systemctl status rsyslog
 The service remained active and enabled for automatic startup.
 Log Bridge Configuration in Rsyslog
 
-### 4. Configuration
+## 4. Configuration
 ### 4.1. File Creation
 
 File created:
