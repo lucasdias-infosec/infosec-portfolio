@@ -87,7 +87,7 @@ sudo systemctl status suricata
 
 ## 4. Integração
 
-Para centralizar os eventos de segurança, os registros do Suricata foram integrados ao rsyslog. Veja o processo aqui.
+Para centralizar os eventos de segurança, os registros do Suricata foram integrados ao rsyslog. Veja o processo [aqui](/rsyslog.md).
 
 ## 5. Validação Operacional (PoC)
 
@@ -145,3 +145,5 @@ O laboratório passa, portanto, a operar sob um modelo de defesa em profundidade
 - Monitoramento de host (Wazuh Agent/Manager)
 - Monitoramento de rede (Suricata IDS)
 - Análise centralizada de eventos (Wazuh Dashboard)
+
+Essa abordagem multicamadas fortalece a postura geral de segurança da infraestrutura e melhora a capacidade de detecção em diferentes vetores de ataque.
