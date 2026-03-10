@@ -76,7 +76,7 @@ Esse teste confirmou:
 - Processamento pelo mecanismo de regras.
 - Indexação e visualização no dashboard.
 
-### 6. Eventos de Inicialização do Sistema
+## 6. Eventos de Inicialização do Sistema
 
 Após reinicialização da máquina virtual, foram registrados:
 
