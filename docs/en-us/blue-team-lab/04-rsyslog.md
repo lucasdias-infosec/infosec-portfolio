@@ -63,15 +63,21 @@ Monitored files:
 ### 4.3 Forwarding (omfwd)
 
 Forwarding configured to:
+
+```bash
 <MANAGER_IP>:515
+```
 
 Directive used:
+
+```bash
 . @<MANAGER_IP>:515
+```
 
 ### 4.4. Port Justification
 
-Port 515/UDP designated for Wazuh.
-Port 514/UDP/TCP reserved for future reception of external logs.
+- Port 515/UDP designated for Wazuh.
+- Port 514/UDP/TCP reserved for future reception of external logs.
 
 ## 5. Wazuh Configuration as Analyzer
 
