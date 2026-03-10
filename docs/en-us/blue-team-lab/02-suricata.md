@@ -2,11 +2,7 @@
 
 ## 1. Context
 
-Suricata is a high-performance network intrusion detection engine (IDS) with additional capabilities to operate as:
-
-- IDS (Intrusion Detection System)
-- IPS (Intrusion Prevention System)
-- NSM (Network Security Monitoring)
+Suricata is a high-performance network intrusion detection engine (IDS) with additional capabilities to operate as IPS and NSM (Network Security Monitoring).
 
 Its implementation in the laboratory aimed to:
 
