@@ -59,11 +59,13 @@ Arquivos monitorados:
 /var/log/suricata/eve.json
 ```
 
-# 4.3. Encaminhamento (omfwd)
+### 4.3. Encaminhamento (omfwd)
 
 Encaminhamento configurado para:
 
-* <IP_DO_MANAGER>:515
+```bash
+<IP_DO_MANAGER>:515
+```
 
 Diretiva utilizada:
 
