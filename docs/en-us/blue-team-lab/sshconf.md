@@ -25,8 +25,8 @@ Observed Results:
 
 - Service status: active (running)
 - Service enabled for automatic startup
+- Persistence confirmed after system reboot
 
-Persistence confirmed after system reboot
 This step ensured continuous availability of remote access, a fundamental requirement for secure administrative operations.
 
 ## 3. Network Interface Identification
