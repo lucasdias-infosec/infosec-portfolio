@@ -139,9 +139,9 @@ Expected result:
 ## 8. Architectural Benefits
 ### 8.1 Separation of Responsibilities
 
-Log generation → Specialized tools
-Transport → Rsyslog
-Analysis and correlation → Wazuh
+- Log generation → Specialized tools
+- Transport → Rsyslog
+- Analysis and correlation → Wazuh
 
 ### 8.2. Scalability
 
