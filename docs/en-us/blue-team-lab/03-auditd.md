@@ -30,7 +30,7 @@ Auditd operates as the user-space interface to the Linux kernel auditing subsyst
 
 Enabling Auditd establishes a behavioral monitoring foundation at the operating system level.
 
-### 3. Initial Audit Rule Structure (Proof of Concept)
+## 3. Initial Audit Rule Structure (Proof of Concept)
 
 To validate the monitoring workflow, a rule was created to track execution of the binary:
 
