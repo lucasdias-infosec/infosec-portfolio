@@ -3,6 +3,7 @@
 ## 1. Context
 
 During the Ubuntu Server installation, the OpenSSH service was enabled automatically. However, the environment was configured to rely exclusively on password-based authentication, with no public keys previously associated with the administrative user.
+
 Since the laboratory aims to simulate security practices aligned with real-world corporate environments, an asymmetric cryptography-based authentication model was implemented. This approach significantly reduces the attack surface related to brute-force attempts and weak credential exposure.
 
 ## 2. SSH Service Verification and Persistence
