@@ -54,6 +54,7 @@ A escolha do base64 ocorreu por se tratar de um utilitário frequentemente utili
 - Obfuscação de dados
 - Exfiltração
 - Técnicas pós-exploração
+- Fluxos de trabalho potenciais para exfiltração de dados
 
 Essa regra teve caráter exclusivamente validatório.
 
