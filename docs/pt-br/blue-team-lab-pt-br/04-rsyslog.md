@@ -139,7 +139,9 @@ Resultado esperado:
 ## 8. Benefícios Arquiteturais
 ### 8.1. Separação de Responsabilidades
 
-Geração de logs → Ferramentas específicas → Transporte → Rsyslog → Análise e correlação → Wazuh
+- Geração de logs → Ferramentas específicas
+- Transporte → Rsyslog
+- Análise e correlação → Wazuh
 
 ### 8.2. Escalabilidade
 
