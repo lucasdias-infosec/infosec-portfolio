@@ -1,4 +1,4 @@
-# Relatório de Implementação: Detecção de Artefatos Maliciosos com YARA e Integração ao Wazuh
+# Detecção de Artefatos Maliciosos com YARA e Integração ao Wazuh
 
 ## 1. Objetivo
 
