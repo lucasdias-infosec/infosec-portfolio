@@ -38,9 +38,9 @@ nav:
           - Infrastructure Base: en-us/blue-team-lab/00-base-infra.md
           - Wazuh: en-us/blue-team-lab/01-wazuh.md
           - Suricata: en-us/blue-team-lab/02-suricata.md
-          - Auditd: en-us/blue-team-lab/03-auditd.md
+          - YARA: en-us/blue-team-lab/03-YARA.md
+         # - Auditd: en-us/blue-team-lab/03-auditd.md
           - Rsyslog: en-us/blue-team-lab/04-rsyslog.md
-          - YARA: en-us/blue-team-lab/05-YARA.md
           - SSH Configuration: en-us/blue-team-lab/sshconf.md
   - Ethics and Contribution:
       - Code of Conduct: en-us/code-of-conduct.md

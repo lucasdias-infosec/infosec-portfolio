@@ -29,7 +29,7 @@ A construção detalhada da base está documentada em:
 - [00-base-infra](00-base-infra.md)
 - [01-wazuh](01-wazuh.md)
 - [02-suricata](02-suricata.md)
-- [03-auditd](03-auditd.md)
+- [03-YARA](03-YARA.md)
 - [04-rsyslog](04-rsyslog.md)
 - [SSH Configuration](sshconf.md)
 

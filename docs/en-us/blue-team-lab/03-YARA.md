@@ -206,4 +206,4 @@ Expected results:
 - Wazuh decodes the event
 - Alert is displayed in the Wazuh Dashboard
 
-[Versão pt-BR](../../pt-br/blue-team-lab-pt-br/05-YARA.md)
+[Versão pt-BR](../../pt-br/blue-team-lab-pt-br/03-YARA.md)
