@@ -148,4 +148,4 @@ Enabling Auditd introduces kernel-level behavioral monitoring, complementing exi
 
 This implementation strengthens the defense-in-depth model and transitions the laboratory from tool installation to structured detection engineering.
 
-[Versão pt-BR](../../pt-br/blue-team-lab-pt-br/03-auditd.md)
+[Versão pt-BR](../../pt-br/blue-team-lab-pt-br/auditd.md)
