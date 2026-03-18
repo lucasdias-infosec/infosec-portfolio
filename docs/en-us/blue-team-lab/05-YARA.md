@@ -205,3 +205,5 @@ Expected results:
 - Detection is logged in the local file
 - Wazuh decodes the event
 - Alert is displayed in the Wazuh Dashboard
+
+[Versão pt-BR](../../pt-br/blue-team-lab-pt-br/05-YARA.md)
