@@ -59,7 +59,7 @@ Monitored files:
 /var/log/suricata/eve.json
 ```
 
-### 4.3 Forwarding (omfwd)
+### 4.3. Forwarding (omfwd)
 
 Forwarding configured to:
 
@@ -108,8 +108,7 @@ The <localfile> blocks that performed direct file reading were removed, preventi
 File reading became the exclusive responsibility of Rsyslog.
 
 ## 7. Validation Tests
-
-### 7.1 Network Test (Suricata)
+### 7.1. Network Test (Suricata)
 
 ```bash
 curl http://testmyids.com
@@ -123,7 +122,7 @@ Expected result:
 - Alert displayed containing source and destination IP
 
 ## 8. Architectural Benefits
-### 8.1 Separation of Responsibilities
+### 8.1. Separation of Responsibilities
 
 - Log generation → Specialized tools
 - Transport → Rsyslog
