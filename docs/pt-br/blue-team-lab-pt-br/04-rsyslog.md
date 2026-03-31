@@ -55,7 +55,6 @@ Arquivo criado:
 Arquivos monitorados:
 
 ```bash
-/var/log/audit/audit.log
 /var/log/suricata/eve.json
 ```
 
@@ -110,20 +109,7 @@ Os blocos <localfile> que realizavam leitura direta dos arquivos foram removidos
 A leitura passou a ser responsabilidade exclusiva do Rsyslog.
 
 ## 7. Testes de Validação
-### 7.1. Teste de Sistema (Auditd)
-
-```bash
-echo "teste" | base64 -d
-```
-
-Resultado esperado:
-
-- Log gerado pelo Auditd
-- Capturado pelo Rsyslog
-- Encaminhado ao Manager
-- Exibido no Dashboard
-
-### 7.2. Teste de Rede (Suricata)
+### 7.1. Teste de Rede (Suricata)
 
 ```bash
 curl http://testmyids.com

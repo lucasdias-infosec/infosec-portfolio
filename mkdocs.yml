@@ -41,7 +41,7 @@ nav:
           - YARA: en-us/blue-team-lab/03-YARA.md
          # - Auditd: en-us/blue-team-lab/03-auditd.md
           - Rsyslog: en-us/blue-team-lab/04-rsyslog.md
-          - SSH Configuration: en-us/blue-team-lab/sshconf.md
+      - SSH Configuration: en-us/blue-team-lab/sshconf.md
   - Ethics and Contribution:
       - Code of Conduct: en-us/code-of-conduct.md
       - Contribution-Guide: en-us/contribution-guide.md
